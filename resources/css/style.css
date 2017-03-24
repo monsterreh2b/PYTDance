@@ -1,0 +1,664 @@
+html{
+	font-size: 16px;
+}
+
+/*.navbar {
+	height: 3.6875rem;
+	border: 1px solid red;
+}*/
+
+.navbar-header{
+	
+	/*border: 2px solid blue;*/
+	position: relative;
+	left:3.6875rem;
+}
+
+/*.navbar-brand{
+	border: 2px solid blue;
+
+}*/
+
+.navbar img {
+	height: 70px;
+	
+	/*border: 2px solid white;*/
+	
+	position: relative;
+	bottom: 55%;	
+
+}
+	/*need below to ensure nav links are centered when browser gets smaller*/
+
+	nav{
+	text-align: center;
+}
+
+
+.nav a{
+	font-family: "Open Sans";
+	font-size: 1rem;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+
+
+
+/* unvisited link grey */
+#top-menu a:link {
+	color: white;
+}
+/* visited link grey */
+#top-menu a:visited {
+	color: white;
+}
+/* mouse over link blue */
+#top-menu a:hover {
+	color: yellow;
+}
+/* selected link blue */
+#top-menu a:active {
+	color: red;
+}
+
+#top-menu img:hover {
+	background-image: url(../images/logo-color yellow.png);
+}
+/* !IMPORTANT ONLY ADD THIS CLASS TO YOUR ACTIVE PAGE LINK ( Color Blue )*/
+.active a {
+	color: #0CF;
+}
+
+.jumbotron{
+	height: 42rem;
+    background-image: url(../images/dancers-photo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 90%;
+    margin-bottom:0;
+}
+
+.about, .classes, .faculty, .contact{
+	width:100%;
+	height: 42rem;
+	border-bottom: 5px solid black;
+	display: flex;
+	flex-direction: row;
+	border-bottom:10px;
+}
+
+.faculty {
+
+	align-items: center;
+	justify-content: flex-end;
+	background-image: url(../images/faculty-photo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact{
+
+	align-items: center;
+	justify-content: flex-end;
+	background-image: url(../images/JE_Dance_Studio.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.faculty-text, .contact-text{
+	width: 55%;
+	margin-right: 10%;
+}
+
+.desaturate {
+    filter: grayscale(100%); /* Standard CSS */
+    -webkit-filter: grayscale(100%); /* CSS for Webkit Browsers */
+    filter: url(/elements/grayscale.svg#desaturate); /* Firefox 4-34 */
+    filter: gray;  /* Internet Explorer IE6-9 */
+    -webkit-filter: grayscale(1); /* Old WebKit Browsers */
+}
+
+.desaturate:hover {
+    filter: grayscale(0%);
+    filter: none;
+    -webkit-filter: grayscale(0); /* Old WebKit */
+}
+
+.about-left{
+	width:50%;
+	height: 100%;
+	/*border: 1px solid red;*/
+	background-image: url(../images/workout-photo.png);
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.classes-left{
+	width:50%;
+	height: 100%;
+	/*border: 1px solid red;*/
+	background-image: url(../images/classes-photo.png);
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-right, .classes-right{
+	width:50%;
+	height: 100%;
+	/*border: 1px solid red;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+.about-right h1, .faculty h1, .contact h1{
+	font-size: 3.125rem;
+	font-weight: bold;
+	color: #794ae2;
+}
+
+.faculty p{
+	font-size: 1.5rem;
+	line-height:1.5;
+	color: #999999;
+	
+}
+
+.contact p, .contact a{
+	font-size: 1.5rem;
+	line-height:1.5;
+	color: white;
+	
+}
+
+.classes-right h1{
+	font-size: 3.125rem;
+	font-weight: bold;
+	color: rgba(174,75,227,0.9);
+}
+
+.about-right p, .alpha-right p, .beta-left p, .classes-right p{
+	color: #666666;
+	margin-top:4rem;
+	font-size: 1.5rem;
+	line-height:1.5;
+}
+
+
+.center{
+	text-align: center;
+}
+
+.jumbotron h1{
+	width: 45rem;
+	text-align: center;
+	/*border: 1px solid red;*/
+	margin-top: 9.4375rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2.6875rem;
+	font-family: "Roboto";
+	font-size: 3.125rem;
+	font-weight: bold;
+	color: #ffffff;
+	line-height:1;
+
+}
+
+.jumbotron p{
+	width: 45rem;
+
+	/*margin-left: 11.5%;*/
+	margin: 0 auto;
+	font-family: "Roboto";
+	font-size: 1.5rem;
+	line-height:1.5;
+	color: #ffffff;
+
+	/*position: relative;
+	bottom: 10%;*/
+}
+
+.jumbotron .btn{
+	margin-top: 5rem;
+}
+
+.btn-primary{
+	color: white;
+  	background-color:#f5a623;
+  	border-radius: 2px;
+  	font-family: "Open Sans";
+  	font-size: 1.375rem;
+	font-weight: bold;
+	padding-left: 3.125rem;
+	padding-right: 3.125rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.couple, .fire, .jump, .map{
+	width: 100%;
+	height: 31.25rem;
+	/*background-image: url(../images/graffiti-photo.png);*/
+    /*background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;*/
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+
+}
+
+.alpha{
+	background-color: #f2f2f2;
+}
+.alpha, .beta{
+	width: 100%;
+	height: 23rem;
+	/*border: 1px solid red;*/
+	display: flex;
+	flex-direction: row;
+}
+
+.alpha-left{
+	width:33%;
+	height:100%;
+	/*border: 1px solid yellow;*/
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.alpha-right{
+	width:66%;
+	height:100%;
+	/*border: 1px solid yellow;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.beta-left{
+	width:66%;
+	height:100%;
+	/*border: 1px solid yellow;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.beta-right{
+	width:33%;
+	height:100%;
+	/*border: 1px solid yellow;*/
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+}
+.alpha-right h1{
+	color: #794ae2;
+	margin-top: 4rem;
+	margin-left: 5rem;
+}
+
+.alpha-right p{
+	margin-left: 5rem;
+}
+
+.beta-left h1{
+	color: #794ae2;
+	margin-top: 4rem;
+	margin-left: 19%;
+}
+
+.beta-left p{
+	margin-left: 19%;
+}
+
+.beta-right img{
+	margin-left: 5%;
+}
+
+.couple{
+	background-image: url(../images/graffiti-photo.png);
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fire{
+	background-image: url(../images/fire-photo.png);
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.jump{
+	background-image: url(../images/jump-photo.png);
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.purple{
+	width: 25rem;
+	height: 20rem;
+	background-color: rgba(120,73,225, 0.9);
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;	
+    justify-content: center;
+    color: #ffffff;
+}
+
+.map{
+	
+	background-image: url(../images/map.jpg);
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.map .purple p{
+	line-height: 0.5;
+}
+#purple-two{
+	background-color: rgba(173,74,226, 0.9);
+}
+
+.purple h1{
+	font-size: 2.25rem;
+	font-weight: bold;
+	line-height:1.2;
+	margin-left:3rem;
+
+
+}
+
+.purple p{
+	font-size: 1.125rem;
+	line-height:1.4;
+	margin-left:3rem;
+	margin-top: .75rem;
+	
+}
+
+.purple a{
+	font-weight: bold;
+	margin-left:3rem;
+	color: #ffffff;
+	margin-top: .75rem;
+}
+
+#schedule h1{
+	font-size: 1.875rem;
+	font-weight: bold;
+	color: rgba(174,75,227,0.9);
+	margin-top: 1.875rem;
+}
+
+#schedule h3{
+	font-size: 1.125rem;
+	font-weight: bold;
+}
+
+#schedule h4{
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #000000;
+}
+
+#schedule p{
+	font-size: .875rem;
+	line-height: 1.7;
+	margin-bottom: 1.875rem;
+}
+
+#faces h1{
+	font-size: 1.875rem;
+	font-weight: bold;
+	color: #8a54ff;
+	margin-top: 3rem;
+}
+
+
+#faces p{
+	font-size: .875rem;
+	line-height: 1.5;
+	margin-bottom: 3rem;
+}
+.footer{
+	background-image: url(../images/party-photo.png);
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer a{
+	color: #ffffff;;
+}
+.social{
+	width: 100%;
+	height: 3.125rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.social-tablet{
+	display: none;
+}
+.social img{
+	margin-left: 1rem;
+}
+.social i{
+	color: #ffffff;
+}
+
+.right a{
+	margin-right:1rem;
+}
+.addy{
+	color: #ffffff;
+	height:15rem;
+}
+
+.addy-tablet{
+	display:none;
+}
+.addy-bottom{
+	width: 100%;
+	height: 15rem;
+
+}
+
+
+.addy-top{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.addy-top span{
+	margin-top: 5rem;
+}
+
+.addy-top a{
+	font-size: .875rem;
+	letter-spacing: 0.7px;
+}
+
+.fa-facebook-official:hover{
+  
+  color:#3a5795;
+  background:white;
+  
+  
+  }
+
+.fa-twitter:hover{
+  color: white;
+  background: #15cadb; 
+}
+
+.fa-instagram:hover{
+color: white;
+  background: #f02f17;
+}
+
+.fa-yelp:hover{
+	color:#e20413;
+  background:white;
+}
+
+
+.main {
+  margin: 0 auto;
+  padding-top: 3%;
+  padding-bottom: 3%;
+/*border: 1px solid red;*/
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+
+background-image: url(../images/city-road-street-buildings.jpg);
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main h1 {
+  font-size: 30px;
+  margin: 0 0 20px 0;
+  color: white;
+}
+
+.main label{
+	color: white;
+}
+
+.container {
+  max-width: 100%;
+}
+/* Form */
+form input.form-control { 
+  border:0px;
+  border-radius:0px; 
+}
+
+.main .btn { 
+  margin-top:30px; 
+  color:#fff;
+  background:rgba(0,240,190,0.25);
+  border:0px;
+  border-radius:0px; 
+}
+
+.first-name-error,
+.last-name-error,
+.email-error,
+.password-error {
+  color: #dd4b39;
+  font-weight: 600;
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 828px) {
+
+
+	.couple, .fire, .jump{
+	width: 100%;
+	height: 30rem;
+	display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+	.purple{
+	width: 100%;
+	height: 12.1875rem;
+	}
+
+	.purple h1, .purple p, .purple a{
+		position: relative;
+		bottom: 7%;
+	}
+
+	.social img, .right span{
+		display:none;
+	}
+
+	.social{
+		display: none;
+	}
+
+	.social-tablet{
+	width: 100%;
+	height: 2.5rem;
+	/*border: 1px solid red;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	}
+
+
+	.social-tablet i{
+	color: #ffffff;
+	margin-right:1.5rem;
+	margin-left:1.5rem;
+	position: relative;
+	top:20%;
+}
+	.addy{
+	color: #ffffff;
+	height:8.75rem;
+	}
+
+	.addy-top span, .addy-top p, .addy-top a, .addy-bottom span{
+		font-size:.625rem ;
+		letter-spacing: 0.5px;
+		position: relative;
+		bottom: 25%;
+	}
+
+	img.navbar-brand{
+		text-align: center;
+	}
+
+	.jumbotron{
+		position: relative;
+		top:50%;
+	}
+
+	.purple h1{
+	font-size: 1.75rem;
+	font-weight: bold;
+	line-height:0.4;
+	margin-top: 5%;
+}
+/*	.jumbotron{
+	margin-top:30vh;
+
+}*/
+}
+
+@media only screen and (min-width: 0px) and (max-width: 988px) {
+
+.main h1, .main label{
+	color: orange;
+	
+}
+}
